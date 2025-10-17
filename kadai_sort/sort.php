@@ -13,24 +13,24 @@
         function sort_2way($array,$order){
           
         
-          if ($array){
+          if ($order){
               echo'昇順にしました<br>';
-              sort ($order);
-              foreach($order as $num){
+              sort ($array);
+              foreach($array as $num){
               echo"{$num}<br>";
             }
           } else{
             echo '降順にしました<br>';
-             rsort ($order);
-            foreach($order as $num){  
+             rsort ($array);
+            foreach($array as $num){  
             echo"{$num}<br>";
             }
           }
         } 
           
         
-         sort_2way (true, $nums);
-         sort_2way (false, $nums);
+         sort_2way ($nums, true);
+         sort_2way ($nums,false);
         ?>
     </p>
 </body>
