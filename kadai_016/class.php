@@ -20,7 +20,7 @@
       public function set_name(string $name){
         $this->name = $name;
       }
-      public function show_name(){
+      public function show_price(){
         echo $this->price . '<br>';
       }
     }
@@ -47,7 +47,7 @@
   echo '<br>';
   print_r($animal);
   echo '<br>';
-  $food->show_name();
+  $food->show_price();
   $animal->show_height();
   ?>
   </p>
